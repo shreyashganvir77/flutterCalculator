@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CalculatorButtonwithIcon extends StatelessWidget {
   final Icon icon;
-  final int color;
+  final Color color;
   final int shadowColor;
   const CalculatorButtonwithIcon(
       {Key? key,
@@ -33,7 +33,7 @@ class CalculatorButtonwithIcon extends StatelessWidget {
       child: FloatingActionButton(
         onPressed: () {},
         child: icon,
-        backgroundColor: Color(color),
+        backgroundColor: color,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(35),
         ),
@@ -44,9 +44,9 @@ class CalculatorButtonwithIcon extends StatelessWidget {
 
 class CalculatorButton extends StatelessWidget {
   final String title;
-  final int color;
-  final textColor;
-  final shadowColor;
+  final Color color;
+  final Color textColor;
+  final int shadowColor;
   const CalculatorButton({
     Key? key,
     required this.title,
@@ -76,11 +76,11 @@ class CalculatorButton extends StatelessWidget {
       ),
       child: FloatingActionButton(
         onPressed: () {},
-        backgroundColor: Color(color),
+        backgroundColor: color,
         child: Center(
           child: Text(
             title,
-            style: TextStyle(color: Color(textColor), fontSize: 24),
+            style: TextStyle(color: textColor, fontSize: 24),
           ),
         ),
         shape: RoundedRectangleBorder(

@@ -6,15 +6,22 @@ class CustomTheme with ChangeNotifier {
   static bool _isDarkTheme = true;
   ThemeMode get currentTheme => _isDarkTheme ? ThemeMode.dark : ThemeMode.light;
 
-  void toggleTheme() {
+  toggleTheme() {
     _isDarkTheme = !_isDarkTheme;
     notifyListeners();
   }
 
   static get lightTheme {
     return ThemeData(
-      primaryColor: Colors.blue,
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFFECEEF0),
+      colorScheme: ColorScheme.light(
+        //number buttons
+        primary: Color(0xFFF5F4F7),
+        //orange upper buttons
+        secondary: Color(0xFFE6D9C3),
+        //purple side buttons
+        primaryVariant: Color(0xffb3a5d9),
+      ),
       scaffoldBackgroundColor: Colors.white,
       textTheme: TextTheme(
         headline1: TextStyle(color: Colors.black),
@@ -27,8 +34,16 @@ class CustomTheme with ChangeNotifier {
 
   static get darkTheme {
     return ThemeData(
-      primaryColor: Colors.black,
-      backgroundColor: Colors.grey,
+      backgroundColor: Color(0xFF343739),
+      colorScheme: ColorScheme.dark(
+        //number buttons
+        primary: Color(0xFF38393D),
+        //orange upper buttons
+        secondary: Color(0xFF4B463B),
+        //purple side buttons
+        primaryVariant: Color(0xff44375E),
+        onSurface: Color(0xffe4e7e8),
+      ),
       scaffoldBackgroundColor: Colors.grey,
       textTheme: TextTheme(
         headline1: TextStyle(color: Colors.white),
