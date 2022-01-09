@@ -71,35 +71,35 @@ class HomePage extends StatelessWidget {
                       title: 'C',
                       color: Color(0xFFFEB92D),
                       textColor: Color(0xFFFFFFFF),
-                      shadowColor: 0xfffed8b1,
+                      shadowColor: Color(0xfffed8b1),
                     ),
                     CalculatorButtonwithIcon(
                         color: Theme.of(context).colorScheme.secondary,
-                        shadowColor: 0xfffed8b1,
+                        shadowColor: Color(0xfffed8b1),
                         icon: Icon(
                           MdiIcons.squareRoot,
                           color: Color(0xFFFCB82D),
                         )),
                     CalculatorButton(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       title: '7',
                       color: Theme.of(context).colorScheme.primary,
                       textColor: Theme.of(context).colorScheme.onSurface,
                     ),
                     CalculatorButton(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       title: '4',
                       color: Theme.of(context).colorScheme.primary,
                       textColor: Theme.of(context).colorScheme.onSurface,
                     ),
                     CalculatorButton(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       title: '1',
                       color: Theme.of(context).colorScheme.primary,
                       textColor: Theme.of(context).colorScheme.onSurface,
                     ),
                     CalculatorButton(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       title: '.',
                       color: Theme.of(context).colorScheme.primary,
                       textColor: Theme.of(context).colorScheme.onSurface,
@@ -113,36 +113,36 @@ class HomePage extends StatelessWidget {
                       title: '(',
                       color: Theme.of(context).colorScheme.secondary,
                       textColor: Color(0xFFFCB82D),
-                      shadowColor: 0xfffed8b1,
+                      shadowColor: Color(0xfffed8b1),
                     ),
                     CalculatorButtonwithIcon(
                       color: Theme.of(context).colorScheme.secondary,
-                      shadowColor: 0xfffed8b1,
+                      shadowColor: Color(0xfffed8b1),
                       icon: Icon(
                         MdiIcons.percent,
                         color: Color(0xFFFCB82D),
                       ),
                     ),
                     CalculatorButton(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       title: '8',
                       color: Theme.of(context).colorScheme.primary,
                       textColor: Theme.of(context).colorScheme.onSurface,
                     ),
                     CalculatorButton(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       title: '5',
                       color: Theme.of(context).colorScheme.primary,
                       textColor: Theme.of(context).colorScheme.onSurface,
                     ),
                     CalculatorButton(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       title: '2',
                       color: Theme.of(context).colorScheme.primary,
                       textColor: Theme.of(context).colorScheme.onSurface,
                     ),
                     CalculatorButton(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       title: '0',
                       color: Theme.of(context).colorScheme.primary,
                       textColor: Theme.of(context).colorScheme.onSurface,
@@ -156,36 +156,36 @@ class HomePage extends StatelessWidget {
                       title: ')',
                       color: Theme.of(context).colorScheme.secondary,
                       textColor: Color(0xFFFCB82D),
-                      shadowColor: 0xfffed8b1,
+                      shadowColor: Color(0xfffed8b1),
                     ),
                     CalculatorButtonwithIcon(
                       color: Theme.of(context).colorScheme.secondary,
-                      shadowColor: 0xfffed8b1,
+                      shadowColor: Color(0xfffed8b1),
                       icon: Icon(
                         MdiIcons.plusMinus,
                         color: Color(0xFFFCB82D),
                       ),
                     ),
                     CalculatorButton(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       title: '9',
                       color: Theme.of(context).colorScheme.primary,
                       textColor: Theme.of(context).colorScheme.onSurface,
                     ),
                     CalculatorButton(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       title: '6',
                       color: Theme.of(context).colorScheme.primary,
                       textColor: Theme.of(context).colorScheme.onSurface,
                     ),
                     CalculatorButton(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       title: '3',
                       color: Theme.of(context).colorScheme.primary,
                       textColor: Theme.of(context).colorScheme.onSurface,
                     ),
                     CalculatorButtonwithIcon(
-                      shadowColor: 0xffc6c6c5,
+                      shadowColor: Theme.of(context).colorScheme.surface,
                       color: Theme.of(context).colorScheme.primary,
                       icon: Icon(
                         MdiIcons.backspaceOutline,
@@ -198,7 +198,7 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     CalculatorButtonwithIcon(
-                      shadowColor: 0xffb3a5d9,
+                      shadowColor: Theme.of(context).colorScheme.onSecondary,
                       color: Theme.of(context).colorScheme.primaryVariant,
                       icon: Icon(
                         MdiIcons.multiplication,
@@ -206,7 +206,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     CalculatorButtonwithIcon(
-                      shadowColor: 0xffb3a5d9,
+                      shadowColor: Theme.of(context).colorScheme.onSecondary,
                       color: Theme.of(context).colorScheme.primaryVariant,
                       icon: Icon(
                         MdiIcons.division,
@@ -214,7 +214,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     CalculatorButtonwithIcon(
-                      shadowColor: 0xffb3a5d9,
+                      shadowColor: Theme.of(context).colorScheme.onSecondary,
                       color: Theme.of(context).colorScheme.primaryVariant,
                       icon: Icon(
                         MdiIcons.minus,
@@ -222,7 +222,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     CalculatorButtonwithIcon(
-                      shadowColor: 0xffb3a5d9,
+                      shadowColor: Theme.of(context).colorScheme.onSecondary,
                       color: Theme.of(context).colorScheme.primaryVariant,
                       icon: Icon(
                         MdiIcons.plus,

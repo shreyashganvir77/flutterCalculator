@@ -21,6 +21,10 @@ class CustomTheme with ChangeNotifier {
         secondary: Color(0xFFE6D9C3),
         //purple side buttons
         primaryVariant: Color(0xffb3a5d9),
+        //1,2,3.. shadow colors
+        surface: Color(0xffc6c6c5),
+        //last column shadow colors
+        onSecondary: Color(0xffb3a5d9),
       ),
       scaffoldBackgroundColor: Colors.white,
       textTheme: TextTheme(
@@ -42,6 +46,7 @@ class CustomTheme with ChangeNotifier {
         secondary: Color(0xFF4B463B),
         //purple side buttons
         primaryVariant: Color(0xff44375E),
+        //text color on buttons
         onSurface: Color(0xffe4e7e8),
       ),
       scaffoldBackgroundColor: Colors.grey,
