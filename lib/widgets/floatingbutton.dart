@@ -1,14 +1,18 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 class CalculatorButtonwithIcon extends StatelessWidget {
   final Icon icon;
   final Color color;
   final Color shadowColor;
+  final VoidCallback sign;
   const CalculatorButtonwithIcon(
       {Key? key,
       required this.icon,
       required this.color,
-      required this.shadowColor})
+      required this.shadowColor,
+      required this.sign})
       : super(key: key);
 
   @override
@@ -31,7 +35,7 @@ class CalculatorButtonwithIcon extends StatelessWidget {
         ],
       ),
       child: FloatingActionButton(
-        onPressed: () {},
+        onPressed: sign,
         elevation: 8.0,
         child: icon,
         backgroundColor: color,
@@ -77,7 +81,9 @@ class CalculatorButton extends StatelessWidget {
         ],
       ),
       child: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          print(title);
+        },
         backgroundColor: color,
         child: Center(
           child: Text(

@@ -53,6 +53,12 @@ class HomePage extends StatelessWidget {
                 Row(
                   //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    Container(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [],
+                      ),
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
                           vertical: 0, horizontal: 10.0),
@@ -88,6 +94,7 @@ class HomePage extends StatelessWidget {
                       shadowColor: Color(0xfffed8b1),
                     ),
                     CalculatorButtonwithIcon(
+                        sign: () => print("√"),
                         color: Theme.of(context).colorScheme.secondary,
                         shadowColor: Color(0xfffed8b1),
                         icon: Icon(
@@ -130,6 +137,7 @@ class HomePage extends StatelessWidget {
                       shadowColor: Color(0xfffed8b1),
                     ),
                     CalculatorButtonwithIcon(
+                      sign: () => print("%"),
                       color: Theme.of(context).colorScheme.secondary,
                       shadowColor: Color(0xfffed8b1),
                       icon: Icon(
@@ -173,6 +181,7 @@ class HomePage extends StatelessWidget {
                       shadowColor: Color(0xfffed8b1),
                     ),
                     CalculatorButtonwithIcon(
+                      sign: () => print("+_"),
                       color: Theme.of(context).colorScheme.secondary,
                       shadowColor: Color(0xfffed8b1),
                       icon: Icon(
@@ -199,6 +208,7 @@ class HomePage extends StatelessWidget {
                       textColor: Theme.of(context).colorScheme.onSurface,
                     ),
                     CalculatorButtonwithIcon(
+                      sign: () => print('clear'),
                       shadowColor: Theme.of(context).colorScheme.surface,
                       color: Theme.of(context).colorScheme.primary,
                       icon: Icon(
@@ -212,6 +222,7 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     CalculatorButtonwithIcon(
+                      sign: () => print("*"),
                       shadowColor: Theme.of(context).colorScheme.onSecondary,
                       color: Theme.of(context).colorScheme.primaryVariant,
                       icon: Icon(
@@ -220,6 +231,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     CalculatorButtonwithIcon(
+                      sign: () => print("/"),
                       shadowColor: Theme.of(context).colorScheme.onSecondary,
                       color: Theme.of(context).colorScheme.primaryVariant,
                       icon: Icon(
@@ -228,6 +240,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     CalculatorButtonwithIcon(
+                      sign: () => print("-"),
                       shadowColor: Theme.of(context).colorScheme.onSecondary,
                       color: Theme.of(context).colorScheme.primaryVariant,
                       icon: Icon(
@@ -236,6 +249,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     CalculatorButtonwithIcon(
+                      sign: () => print("+"),
                       shadowColor: Theme.of(context).colorScheme.onSecondary,
                       color: Theme.of(context).colorScheme.primaryVariant,
                       icon: Icon(
