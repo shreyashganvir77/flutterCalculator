@@ -1,8 +1,6 @@
 import 'package:calculator/themes/themes.dart';
 import 'package:calculator/widgets/floatingbutton.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 void main() {
@@ -48,13 +46,29 @@ class HomePage extends StatelessWidget {
         children: [
           Container(
             height: MediaQuery.of(context).size.height * .35,
-            child: Center(
-              child: IconButton(
-                onPressed: () {
-                  currentTheme.toggleTheme();
-                },
-                icon: Icon(MdiIcons.lightSwitch),
-              ),
+            width: MediaQuery.of(context).size.width,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Row(
+                  //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 0, horizontal: 10.0),
+                      child: IconButton(
+                        onPressed: () {
+                          currentTheme.toggleTheme();
+                        },
+                        icon: Icon(MdiIcons.lightSwitch),
+                      ),
+                    ),
+                    Text('Switch to' +
+                        (CustomTheme.current ? ' Light ' : ' Dark ') +
+                        'Theme')
+                  ],
+                ),
+              ],
             ),
             color: Theme.of(context).backgroundColor,
           ),

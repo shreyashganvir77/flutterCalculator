@@ -4,10 +4,12 @@ CustomTheme currentTheme = CustomTheme();
 
 class CustomTheme with ChangeNotifier {
   static bool _isDarkTheme = true;
+  static bool current = true;
   ThemeMode get currentTheme => _isDarkTheme ? ThemeMode.dark : ThemeMode.light;
 
   toggleTheme() {
     _isDarkTheme = !_isDarkTheme;
+    current = !current;
     notifyListeners();
   }
 
