@@ -52,6 +52,7 @@ class CalculatorButton extends StatelessWidget {
   final Color color;
   final Color textColor;
   final Color shadowColor;
+  final VoidCallback number;
 
   const CalculatorButton({
     Key? key,
@@ -59,6 +60,7 @@ class CalculatorButton extends StatelessWidget {
     required this.color,
     required this.textColor,
     required this.shadowColor,
+    required this.number,
   }) : super(key: key);
 
   @override
@@ -81,9 +83,7 @@ class CalculatorButton extends StatelessWidget {
         ],
       ),
       child: FloatingActionButton(
-        onPressed: () {
-          print(title);
-        },
+        onPressed: number,
         backgroundColor: color,
         child: Center(
           child: Text(
